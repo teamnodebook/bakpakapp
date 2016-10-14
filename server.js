@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-var publicPath = path.resolve(__dirname, '/');
+var publicPath = path.join(__dirname, 'public');
 
 // We point to our static assets
 app.use(express.static(publicPath));
